@@ -18,7 +18,7 @@ def hbnb():
     return "HBNB"
 
 
-@app.route("/c/<text>", strict_slashes=False)
+@app.route("/c/<string:text>", strict_slashes=False)
 def c_is_fun(text):
     """Configure C is Fun"""
     text = text.replace('_', ' ')
