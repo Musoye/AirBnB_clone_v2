@@ -22,7 +22,8 @@ def hbnb():
 def c_is_fun(text):
     """Configure C is Fun"""
     text = text.replace('_', ' ')
-    return f'C {text}'
+    value = 'C {}'.format(text)
+    return value
 
 
 @app.route("/python/", strict_slashes=False)
@@ -30,13 +31,14 @@ def c_is_fun(text):
 def python_is_fun(text='is cool'):
     """Configure Python is Fun"""
     text = text.replace('_', ' ')
-    return f'C {text}'
+    value = 'Python {}'.format(text)
+    return value
 
 
 @app.route("/number/<int:n>", strict_slashes=False)
 def is_number(n):
     """Check and return if it is an integer"""
-    return f'{n} is a number'
+    return '{} is a number'.format(n)
 
 
 if __name__ == "__main__":

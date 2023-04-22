@@ -22,7 +22,8 @@ def hbnb():
 def c_is_fun(text):
     """Configure C is Fun"""
     text = text.replace('_', ' ')
-    return f'C {text}'
+    value = 'C {}'.format(text)
+    return value
 
 
 if __name__ == "__main__":
