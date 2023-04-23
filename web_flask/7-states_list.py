@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Query the state frm a database on run it flask"""
-from flask import Flask, render_template
 from models import storage
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
